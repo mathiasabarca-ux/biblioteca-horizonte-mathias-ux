@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Header / Barra de navegación */
+.barra-navegacion {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icono-logo {
+    height: 22px;
+    margin-right: 8px;
+}
+
+.palabra-naranja {
+    color: #e65c00;
+}
+
+.palabra-negra {
+    color: #1a1a1a;
+}
+
+.header-derecha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-contenedor {
+    display: flex;
+    border: 1px solid #a6a6a6;
+    background-color: #ffffff;
+}
+
+.login-input {
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    outline: none;
+    width: 180px;
+}
+
+.login-boton {
+    border: none;
+    background-color: #e65c00; 
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.carrito-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icono-carrito {
+    width: 22px;
+    height: auto;
+}
+
+/* Contenedor principal alineado */
+.contenedor-centrado {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Barra de Comidas (Categorías) */
+.categorias{
+    width: 100%;
+    background-color: #FEE8C6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.item-comida {
+    text-align: center;
+}
+
+.img-categoria {
+    width: 110px;
+    height: 85px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.texto-categoria {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Bloque Inferior */
+.contenedor-inferior {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Banner Gris */
+.hero-box {
+    flex: 2.8;
+    background-color: #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 0px 10px;
+    gap: 20px;
+}
+
+.hero-texto {
+    flex: 1;
+    text-align: center;
+    color: #000000;
+    padding: 0px;
+    
+}
+
+.hero-texto h1 {
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin-bottom: 24px;
+
+}
+
+.hero-texto h1 strong {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.hero-texto p {
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.hero-texto .subrayado {
+    text-decoration: underline;
+}
+
+.hero-texto .palabra-naranja {
+    color: #e65c00;
+    font-weight: normal;
+}
+
+.hero-imagen-wrapper {
+    flex: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Columna de Recomendados */
+.recomendados-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recomendados-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.tarjeta-platillo {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.tarjeta-platillo img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-info {
+    padding: 8px 10px;
+    position: relative;
+}
+
+.platillo-nombre {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 2px;
+}
+
+.platillo-link {
+    font-size: 12px;
+    color: #551a8b;
+    text-decoration: underline;
+}
+
+.btn-agregar {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e65c00;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
