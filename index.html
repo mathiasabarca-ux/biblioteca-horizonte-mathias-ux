@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Horizonte</title>
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
     <header>
-        <div class="logo">
-            <img src="icono-libro.svg" alt="Icono de libro">
-            <h1>Biblioteca Horizonte</h1>
-        </div>
+       <div class="logotipo">
+    <img src="static/images/open-book-emoji-clipart-lg.png" alt="Icono de libro">
+    <h1>
+        <span class="texto-biblioteca">Biblioteca</span>
+        <span class="texto-horizonte">Horizonte</span>
+    </h1>
+</div>
         
         <div class="formulario-ingreso">
             <input type="email" id="email-input" placeholder="Email">
@@ -20,27 +23,24 @@
         </div>
         
         <div class="carrito-libros">
-            <img src="icono-coleccion.svg" alt="Libros">
+            <img src="static/images/open-book-emoji-clipart-lg.png" alt="Libros">
             <span>Libros seleccionados: <strong id="contador-libros">0</strong></span>
         </div>
     </header>
 
-    <!-- NAVEGACIÓN DE CATEGORÍAS -->
     <nav>
-        <ul class="categorias">
-            <li><a href="#"><img src="icono-novelas.svg" alt=""> Novelas</a></li>
-            <li><a href="#"><img src="icono-ciencia.svg" alt=""> Ciencia</a></li>
-            <li><a href="#"><img src="icono-historia.svg" alt=""> Historia</a></li>
-            <li><a href="#"><img src="icono-tecnologia.svg" alt=""> Tecnología</a></li>
-            <li><a href="#"><img src="icono-arte.svg" alt=""> Arte</a></li>
-            <li><a href="#"><img src="icono-infantil.svg" alt=""> Infantil</a></li>
-        </ul>
+        <div class="categorias">
+            <li><a href="#"><img src="static/images/open-book-emoji-clipart-lg.png" alt=""> Novelas</a></li>
+            <li><a href="#"><img src="static/images/flask.png" alt=""> Ciencia</a></li>
+            <li><a href="#"><img src="static/images/pantheon.png" alt=""> Historia</a></li>
+            <li><a href="#"><img src="static/images/laptop.png" alt=""> Tecnología</a></li>
+            <li><a href="#"><img src="static/images/painting.png" alt=""> Arte</a></li>
+            <li><a href="#"><img src="static/images/bear.png" alt=""> Infantil</a></li>
+        </div>
     </nav>
 
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
-        
-        <!-- SECCIÓN IZQUIERDA: HERO / DESCUBRE -->
+        <!-- Sección principal con texto y multimedia -->
         <section class="seccion-descubre">
             <div class="texto-principal">
                 <h2>Descubre<br>nuevas historias</h2>
@@ -48,33 +48,32 @@
             </div>
             
             <div class="multimedia-principal">
-                <!-- El ID servirá para el evento hover (mouseover/mouseout) en JS -->
-                <img src="miniatura-video-1.jpg" id="imagen-cambiante" alt="Reproductor de video">
+                <!-- Imagen principal / Miniatura -->
+                <img src="static/images/biblio.jfif" id="imagen-principal" alt="Reproductor de video">
+                
+                <!-- Video oculto inicialmente -->
+                <video id="video-hover" src="static/video/Facens 360° _ Biblioteca.mp4" muted loop style="display: none; width: 100%; border-radius: 8px;"></video>
+                
                 <p>Conoce la Biblioteca Horizonte</p>
             </div>
         </section>
 
-        <!-- SECCIÓN DERECHA: RECOMENDADOS -->
         <aside class="seccion-recomendados">
             <h3>Libros recomendados:</h3>
             
             <div class="lista-libros">
-                
-                <!-- Tarjeta de Libro 1 -->
                 <article class="tarjeta-libro">
-                    <img src="placeholder-cien-anos.jpg" alt="Portada Cien años de soledad">
+                    <img src="static/images/100.jfif" alt="Portada Cien años de soledad">
                     <div class="info-libro">
                         <h4>Cien años de soledad</h4>
                         <p>Gabriel García Márquez</p>
                         <a href="#">Ver más...</a>
                     </div>
-                    <!-- La clase servirá para el evento click en JS -->
                     <button class="btn-agregar-libro">+</button>
                 </article>
 
-                <!-- Tarjeta de Libro 2 -->
                 <article class="tarjeta-libro">
-                    <img src="placeholder-sapiens.jpg" alt="Portada Sapiens">
+                    <img src="static/images/sapiens-3.jpg" alt="Portada Sapiens">
                     <div class="info-libro">
                         <h4>Sapiens</h4>
                         <p>Yuval Noah Harari</p>
@@ -83,9 +82,8 @@
                     <button class="btn-agregar-libro">+</button>
                 </article>
 
-                <!-- Tarjeta de Libro 3 -->
                 <article class="tarjeta-libro">
-                    <img src="placeholder-principito.jpg" alt="Portada El principito">
+                    <img src="static/images/prin.jfif" alt="Portada El principito">
                     <div class="info-libro">
                         <h4>El principito</h4>
                         <p>Antoine de Saint-Exupéry</p>
@@ -93,13 +91,10 @@
                     </div>
                     <button class="btn-agregar-libro">+</button>
                 </article>
-
             </div>
         </aside>
-
     </main>
 
-    <!-- Enlace al archivo JavaScript -->
     <script src="static/js/script.js"></script>
 </body>
 </html>
